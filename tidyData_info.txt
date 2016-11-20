@@ -1,0 +1,40 @@
+Codebook for `tidyData.txt`
+===========================
+
+The features for this dataset are a subset of the original Samsung smartphones dataset, which were derived from the raw accelerometer and gyroscpe signals in 3 axial directions, X, Y and Z. Additional signal measurements were also derived from the raw signals, such as Body Acceleration, Gravity Acceleration, and Jerk, and also measurements in the time and frequency domains were calculated. For each type of measurement, a number of statistics of the measurements were computed, of which the mean and standard deviation were extracted for the final tidy dataset.
+
+In `tidayData.txt`, each of the 66 features representing a numeric measurement is of the form
+
+      [statType].[signalType].[valueType].[domainType]
+
+where
+
+- [statType] is one of 
+  - "mean" 
+  - "standardDeviation"
+
+- [signalType] is one of
+  - "BodyAcceleration"
+  - "GravityAcceleration"
+  - "BodyAccelerationJerk"
+  - "BodyGyroscope"
+  - "BodyGyroscopeJerk"
+  - "BodyBodyAccelerationJerk"
+  - "BodyBodyGyroscope"
+  - "BodyBodyGyroscopeJerk" 
+
+- [valueType] is one of
+  - "Magnitude"
+  - "X-direction"
+  - "Y-direction"
+  - "Z-direction"
+
+- [domainType] is one of 
+  - "inTimeDomain"
+  - "inFrequencyDomain"
+
+Additionally, `tidyData.txt` has the features
+
+- "subject": Identifier of the experiment subject
+- "activity": Activity name, one of "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
+- "label": Numeric label of the activity.
